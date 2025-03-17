@@ -8,7 +8,7 @@ window.onload = function(){
         }
     })
     .catch(error=>{
-        console.error(error);
+        console.error("ERROR:",error);
         window.Location.href = "https://lemon-water-022469c10.6.azurestaticapps.net/authentication";
     });
 };
