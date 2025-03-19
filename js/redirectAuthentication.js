@@ -3,7 +3,7 @@ window.onload = function(){
     .then(response => {
         const uid = response.data.uid;
         console.log("response",uid);
-        if(!uid){
+        if(uid == 0){
             window.Location.href = "https://lemon-water-022469c10.6.azurestaticapps.net/authentication";
         }
     })
