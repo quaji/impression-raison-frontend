@@ -24,9 +24,8 @@ body {
 #buttonToAuthentication {
     background-color: black;
     display: flex;
-    justify-content: center; /* 水平方向の中央揃え */
-    align-items: center; /* 垂直方向の中央揃え */
-    /* height: 100px; */
+    justify-content: center;
+    align-items: center; 
     padding: auto;
     font-size: 2rem;
     color: white;
@@ -38,4 +37,47 @@ body {
 #buttonToAuthentication:hover {
     border: double 3px;
     
+}
+
+@media (max-width:900px){
+    body {
+        margin: 20svh 0;
+    }
+    
+    #logoArea {
+        margin:0 auto;
+        text-align: center;
+    }
+    #logoArea img {
+        width: 80%;
+    }
+    
+    #abstArea {
+        margin: auto;
+        width: 80%;
+        text-align: left;
+    }
+    
+    #uiArea{
+        text-align: center;
+        margin: auto;
+        width: 90%;
+    }
+    #buttonToAuthentication {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        padding: auto;
+        font-size: 2rem;
+        color: white;
+        height: 4rem;
+        border-radius: 50px;
+        border: solid 1px gainsboro;
+        cursor: pointer;
+    }
+    #buttonToAuthentication:hover {
+        border: double 3px;
+        
+    }
 }
