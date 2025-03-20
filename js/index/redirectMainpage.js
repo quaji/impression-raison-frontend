@@ -3,8 +3,7 @@ window.onload = function(){
     .then(response => {
         const uid = parseInt(response.data.uid);
         const link = response.data.link;
-        console.log("response",uid);
-        if(!uid){
+        if(uid > 100000000){
             window.location.href = link;
         }
     })
