@@ -9,7 +9,10 @@ if (button) {
                 {
                     'email':email.value
                 }
-            );
+            ).then(response => {
+                const link = response.data.link; 
+                window.location.href = link;
+            })
         }else{
             console.error("data value is null")
         }
