@@ -11,8 +11,8 @@ btn.addEventListener("click",()=>{
     if(tempCode.value && password.value && passwordConfirm.value){
         if(password.value!=passwordConfirm.value)window.alert("パスワードと確認パスワードが一致していませんでした。");
         else{
-            if (btnContainer.classList.contains("disabled")) return;
-            btnContainer.classList.add("disabled");
+            if (btn.classList.contains("disabled")) return;
+            btn.classList.add("disabled");
             axios.post("https://impression-raison-backendapps-e7ejecbkdeggergd.japaneast-01.azurewebsites.net/sign/up",
                 {
                     "tempCode":tempCode.value,
