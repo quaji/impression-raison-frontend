@@ -8,26 +8,26 @@ body {
     padding: 0 5svh;
     width: 50svh;
     text-align: center;
-    /* align-items: center; */
 }
 #logoArea img {
     height: 20svh;
 }
 
 #uiArea{
-    text-align: center;
     margin: auto;
     padding: 5svh;
     width: 50svh;
     height: 40svh;
     border: solid 2px rgba(0, 0, 0, 0.5);
     border-radius: 5pt;
-    display: grid;
-    grid-template-rows: 30% 40% 20% 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }
 
 #pageTitle {
-    font-size: 3rem;
+    font-size: 5svh;
     text-decoration:underline;
 }
 #submitButton {
@@ -36,9 +36,11 @@ body {
     justify-content: center;
     align-items: center; 
     padding: auto;
-    font-size: 2rem;
+    font-size: 4svh;
     color: white;
-    height: 4rem;
+    height: 8svh;
+    width: 80%;
+    margin: auto;
     border-radius: 50px;
     border: solid 1px gainsboro;
     cursor: pointer;
@@ -48,7 +50,7 @@ body {
     border: double 3px;
 }
 
-@media (max-width:1100px){
+@media (max-width:80lvh){
     body {
         margin: 5svh auto 0;    
     }
@@ -77,7 +79,7 @@ body {
     }
     
     #pageTitle {
-        font-size: 3rem;
+        font-size: 10svw;
         text-decoration:underline;
     }
 
@@ -88,19 +90,21 @@ body {
     #emailCon #email{
         width: 64svw;
         height: 8svh;
-        font-size: 1.7rem;
+        font-size: 7svw;
     }
 
 
     #submitButton {
-        background-color: black;
         display: flex;
         justify-content: center;
         align-items: center; 
         padding: auto;
-        font-size: 2rem;
+        font-size: 5svw;
+        height: 10svw;
+
+
+        background-color: black;
         color: white;
-        height: 4rem;
         border-radius: 50px;
         border: solid 1px gainsboro;
         cursor: pointer;

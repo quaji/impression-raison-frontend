@@ -38,7 +38,7 @@ body {
     border: double 3px;
 }
 
-@media (max-width:1100px){
+@media (max-width:80lvh){
     body {
         margin: 20svh 0;
     }
