@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/common/redirectMainpage.js"></script>
+    <link rel="stylesheet" href="style/common/style.css">
+    <script src="js/authentication/authentication.js" defer></script>
+    <link rel="stylesheet" href="style/authentication/style.css">
+    <title>RAISON/authentication</title>
+</head>
+<body>
+    <div id="signFrame">
+        <div id="logoArea"><img src="media/Logo.jpg" alt="logoArea"/></div>
+        <div id="uiArea">
+            <div id="pageTitle">Enter Email</div>
+            <div id="tempCodeCon"><input type="number" id="tempCode" placeholder="Enter Temporary Code Here"><p id="caution" style="color: red;" hidden>Please fill above area.</p></div>
+            <div id="passwordCon"><input type="password" id="password" placeholder="Enter Password Here"><p id="caution" style="color: red;" hidden>Please fill above area.</p></div>
+            <div id="passwordConfirmCon"><input type="password" id="passwordConfirm" placeholder="Enter Password Here"><p id="caution" style="color: red;" hidden>Please fill above area.</p></div>
+            <div id="usernameCon"><input type="text" id="username" placeholder="Enter Username Here"><p id="caution" style="color: red;" hidden>Please fill above area.</p></div>
+            <div id="submitButton">Authentication</div>
+            <div id="coment">上のボタンから登録できます。</div>
+        </div>
+    </div>
+</body>
+</html>
