@@ -1,3 +1,8 @@
+.disabled {
+    pointer-events: none; /* クリック無効 */
+    opacity: 0.5;         /* 視覚的に無効を示す */
+}
+
 body {
     margin: 10svh auto;
 
@@ -15,9 +20,9 @@ body {
 
 #uiArea{
     margin: auto;
-    padding: 5svh;
+    padding: 2svh 5svh 5svh;
     width: 50svh;
-    height: 40svh;
+    height: 50svh;
     border: solid 2px rgba(0, 0, 0, 0.5);
     border-radius: 5pt;
     display: flex;
@@ -27,18 +32,32 @@ body {
 }
 
 #pageTitle {
-    font-size: 5svh;
+    font-size: 4svh;
     text-decoration:underline;
 }
 
-#emailCon {
-    margin:2svh 0;
+#tempCodeCon, #passwordCon, #passwordConfirmCon, #usernameCon {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#emailCon #email{
+#tempCodeCon p, #passwordCon p, #passwordConfirmCon p, #usernameCon p{
+    margin: 0;
+    font-size: 1.7svh;
+    text-align: left;
+}
+
+#tempCodeCon p span, #passwordCon p span, #passwordConfirmCon p span, #usernameCon p span{
+    color: red;
+    font-size: 1.7svh; 
+}
+
+#tempCode, #password, #passwordConfirm, #username{
     width: 40svh;
-    height: 6svh;
-    font-size: 3svh;
+    height: 3svh;
+    font-size: 2svh;
 }
 
 #submitButton {
@@ -67,7 +86,7 @@ body {
 
 @media (max-width:80lvh){
     body {
-        margin: 5svh auto 0;    
+        margin: 5svh auto;    
     }
     
     #logoArea {
@@ -84,9 +103,10 @@ body {
     #uiArea{
         text-align: center;
         margin: auto;
-        padding: 5svh 5svw;
+        padding: 0.5svh 5svw;
         width: 80svw;
-        height: 60svh;
+        height: auto;
+        min-height: 64svh;
         border: solid 2px rgba(0, 0, 0, 0.5);
         border-radius: 5pt;
         display: flex;
@@ -96,18 +116,33 @@ body {
     }
     
     #pageTitle {
-        font-size: 10svw;
+        font-size: 5svw;
         text-decoration:underline;
+        margin: 0 auto;
     }
 
-    #emailCon {
-        margin:2svh 0;
+    #tempCodeCon, #passwordCon, #passwordConfirmCon, #usernameCon {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
-    #emailCon #email{
+    #tempCodeCon p, #passwordCon p, #passwordConfirmCon p, #usernameCon p{
+        margin: 0;
+        font-size: 3.8svw;
+        text-align: left;
+    }
+
+    #tempCodeCon p span, #passwordCon p span, #passwordConfirmCon p span, #usernameCon p span{
+        color: red;
+        font-size: 3.8svw; 
+    }
+
+    #tempCode, #password, #passwordConfirm, #username{
         width: 64svw;
-        height: 8svh;
-        font-size: 7svw;
+        height: 8svw;
+        font-size: 5svw;
     }
 
 
@@ -127,11 +162,13 @@ body {
         cursor: pointer;
     }
     
+    
     #submitButton:hover {
         border: double 3px;
     }
 
     #coment,#caution {
         font-size: 3.2svw;
+        text-align: right;
     }
 }

@@ -6,20 +6,20 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="js/common/redirectMainpage.js"></script>
     <link rel="stylesheet" href="style/common/style.css">
-    <script src="js/authentication/authentication.js" defer></script>
-    <link rel="stylesheet" href="style/authentication/style.css">
+    <script src="js/signup/registerUser.js" defer></script>
+    <link rel="stylesheet" href="style/signup/style.css">
     <title>RAISON/authentication</title>
 </head>
 <body>
     <div id="signFrame">
         <div id="logoArea"><img src="media/Logo.jpg" alt="logoArea"/></div>
         <div id="uiArea">
-            <div id="pageTitle">Enter Email</div>
-            <div id="tempCodeCon"><input type="number" id="tempCode" placeholder="Enter Temporary Code Here"><p id="caution" style="color: red;" hidden>Please fill above area.</p></div>
-            <div id="passwordCon"><input type="password" id="password" placeholder="Enter Password Here"><p id="caution" style="color: red;" hidden>Please fill above area.</p></div>
-            <div id="passwordConfirmCon"><input type="password" id="passwordConfirm" placeholder="Enter Password Here"><p id="caution" style="color: red;" hidden>Please fill above area.</p></div>
-            <div id="usernameCon"><input type="text" id="username" placeholder="Enter Username Here"><p id="caution" style="color: red;" hidden>Please fill above area.</p></div>
-            <div id="submitButton">Authentication</div>
+            <div id="pageTitle">Enter New Account Data</div>
+            <div id="tempCodeCon"><p>一時コード<span>*</span></p><input type="number" id="tempCode" placeholder="Enter Temporary Code Here"><p id="cautionTC" style="color: red;" hidden>Please fill above area.</p></div>
+            <div id="passwordCon"><p>パスワード<span>*</span></p><input type="text" id="password" placeholder="Enter Password Here"><p id="cautionP" style="color: red;" hidden>Please fill above area.</p></div>
+            <div id="passwordConfirmCon"><p>パスワード(確認)<span>*</span></p><input type="text" id="passwordConfirm" placeholder="Enter Password Here"><p id="cautionPC" style="color: red;" hidden>Please fill above area.</p></div>
+            <div id="usernameCon"><p>ユーザネーム設定</p><input type="text" id="username" placeholder="Enter Username Here"><p id="cautionUN" style="color: red;" hidden>Please fill above area.</p></div>
+            <div id="submitButton">Sign Up</div>
             <div id="coment">上のボタンから登録できます。</div>
         </div>
     </div>
