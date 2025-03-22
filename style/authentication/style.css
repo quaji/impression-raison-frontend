@@ -30,16 +30,27 @@ body {
     font-size: 5svh;
     text-decoration:underline;
 }
+
+#emailCon {
+    margin:2svh 0;
+}
+
+#emailCon #email{
+    width: 40svh;
+    height: 6svh;
+    font-size: 3svh;
+}
+
 #submitButton {
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center; 
     padding: auto;
-    font-size: 4svh;
+    font-size: 3.5svh;
     color: white;
-    height: 8svh;
-    width: 80%;
+    height: 6svh;
+    width: 85%;
     margin: auto;
     border-radius: 50px;
     border: solid 1px gainsboro;
@@ -48,6 +59,10 @@ body {
 
 #submitButton:hover {
     border: double 3px;
+}
+
+#coment {
+    font-size: 1.5svh;
 }
 
 @media (max-width:80lvh){
@@ -112,5 +127,9 @@ body {
     
     #submitButton:hover {
         border: double 3px;
+    }
+
+    #coment {
+        font-size: 3.2svw;
     }
 }
