@@ -1,6 +1,7 @@
 
 const button = document.getElementById("submitButton");
 const email = document.getElementById("email");
+const caution = document.getElementById("caution");
 if (button) {
     button.addEventListener('click', () => {
         if(email.value){
@@ -14,11 +15,14 @@ if (button) {
                     const link = response.data.link; 
                     window.location.href = link;
                 }else if(response.data.message){
-                    console.log(response.data.message)
+                    console.log(response.data.message);
                 }
             });
         }else{
-            console.error("data value is null")
+            caution.hidden = false;
+            email.style.backgroundColor = "rgba(255,0,0,0.5)"
+            email.style.borderColor = "rgba(255,0,0,1)"
+            console.error("data value is null");
         }
     });
 } else {
