@@ -5,6 +5,8 @@ const caution = document.getElementById("caution");
 if (button) {
     button.addEventListener('click', () => {
         if(email.value){
+            if (button.classList.contains("disabled")) return;
+            button.classList.add("disabled");
             axios.post(
                 "https://impression-raison-backendapps-e7ejecbkdeggergd.japaneast-01.azurewebsites.net/sign/auth",
                 {
@@ -17,6 +19,9 @@ if (button) {
                 }else if(response.data.message){
                     console.log(response.data.message);
                 }
+            })
+            .finally(() => {
+                button.classList.remove("disabled");
             });
         }else{
             caution.hidden = false;

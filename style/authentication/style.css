@@ -1,3 +1,8 @@
+.disabled {
+    pointer-events: none; /* クリック無効 */
+    opacity: 0.5;         /* 視覚的に無効を示す */
+}
+
 body {
     margin: 10svh auto;
 
